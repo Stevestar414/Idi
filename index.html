@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>goo away</title>
+</head>
+<body>
+
+    <p id="btntext" class="id">San <strong>DAUN</strong>misan?</p>
+    
+    <div class="wrapper">
+        <div class="box">
+            <div class="btns">
+                <button id="btn" class="btn">Ha</button>
+                <button id="btn2" class="btn2">Yoq</button>
+                <button id="btn23" class="btn23">Yoq</button>
+            </div>
+        </div>
+    </div>
+
+<script>
+var x = document.getElementById("btn2");
+x.addEventListener("mouseover", myFunction);
+var g = document.getElementById("btn23");
+g.addEventListener("mouseover", myFunction2);
+
+function myFunction() {
+  document.getElementById("btn23").style.display = 'block';
+  x.style.display = 'none';
+}
+
+function myFunction2() {
+  document.getElementById("btn2").style.display = 'block';
+  g.style.display = 'none';
+}
+
+var h = document.getElementById("btn");
+h.addEventListener("click", myFunction3);
+
+function myFunction3() {
+  document.getElementById("btntext").innerHTML = 'DAUN'
+}
+
+</script>
+
+</body>
+</html>
